@@ -12,10 +12,10 @@
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
 
-FROM node:alpine
+FROM node:8.1.2
 
 # hadolint ignore=DL3017
-RUN apk update && apk upgrade
+# RUN apk update && apk upgrade
 
 # Install the application
 COPY package.json /app/package.json
